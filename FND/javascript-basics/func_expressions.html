@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function expressions vs declarations</title>
+</head>
+<body>
+    <script>
+
+        hello("Pankaj");
+
+        // function declarations - normal declaring of functions
+        // they can be called before declarations in the code (like above)
+        function hello(name = "world"){
+            alert(`Hello, ${name}`);
+        }
+
+        // won't get executed as - function expressions cannot be used before their creation
+        new_hello("Rishabh");
+
+        // function expressions - declaraing functions inside another expression
+        // they cannot be called before the're declared (declared along the expression)
+        // can be used in conditional functional declarations:
+        // to declare functions (and use them globally) inside a conditional/code block
+        let new_hello = function(name){ alert(`Hello ${name}`)}
+
+
+    </script>
+</body>
+</html>
