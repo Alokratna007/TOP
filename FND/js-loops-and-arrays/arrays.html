@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+<body>
+    
+    
+</body>
+
+<script>
+    
+    // Arrays can store different types of data in them
+    const arr = ["Samyak", "Alok", 1234, 'A', 7821];
+
+    // to print entire array
+    console.log(arr);
+
+    // to access element at nth index, enter n-1
+    console.log(arr[2]);
+
+    // length of array
+    console.log(arr.length);
+
+    // push - to add element to the last of an array
+    arr.push("hello world");
+    console.log(arr)
+
+
+    // pop - to remove and return element from the array's end
+    console.log(arr.pop());
+    console.log(arr)
+
+
+    // shift - to remove and return first element of array
+    console.log(arr.shift())
+    console.log(arr)
+
+
+    // unshift - to add element to array's beginning
+    console.log(arr.unshift("Samyak added again"))
+    console.log(arr)
+
+    
+    // to reassign array values:
+    arr[2] = "changed";
+    console.log(arr);
+
+
+    // negative indexing (like [-1]) does not work in javascript
+    // to implement the similar feature, we have .at feature:
+
+    console.log(arr.at(-3)); // returns 3rd element from the last of the array
+    
+</script>
+
+</html>
