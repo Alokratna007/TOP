@@ -54,6 +54,31 @@
 
     console.log(arr.at(-3)); // returns 3rd element from the last of the array
     
+
+    // looping in arrays
+
+    const ar1 = ["McDonald's", "Burger King", "KFC", "Popeyes"];
+
+    // M1 - for loop
+    for (i = 0; i < ar1.length; i++){
+        console.log(ar1[i])
+    }
+
+    console.log("===================")
+    
+    // M2 - for of loop
+    for (let brand of ar1){
+        console.log(brand)
+    }
+    
+    console.log("===================")
+    
+    // M3 - for in loop
+    for (let key in ar1){
+        console.log(ar1[key])
+    }
+
+    console.log("===================")    
 </script>
 
 </html>
