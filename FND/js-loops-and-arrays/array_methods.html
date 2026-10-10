@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+const movies = ["Interstellar", "Inception", "The Odyssey"]
+
+// splice method - can be used to delete, insert or update elements in arrays
+// array.splice(a, b, "ABC", "XYZ", ...)
+// starting from index 'a' -> delete 'b' no of elements (including element at 'a'th place)
+// then, insert "ABC" and "XYZ" and so on...
+
+// 1. Inserting elements into arrays
+movies.splice(2, 1, "The Dark Knight", "Oppenheimer")
+// removes "The Odyssey" and adds the 2 movies - "The Dark Knight" & "Oppenheimer"
+console.log(movies) // ["Interstellar", "Inception", "The Dark Knight", "Oppenheimer"]
+
+// 2. Deleting elements
+movies.splice(3, 1)
+// removes 1 element at (3+1)th i.e. 4th index - Oppenheimer
+console.log(movies) // ["Interstellar", "Inception", "The Dark Knight"]
+
+// 3. Inserting elements without replacement
+movies.splice(2, 0, "Memento", "The Prestige")
+// starting from the (2+1)nth position, delete 0 elements and insert - "Memento" & "The Prestige"
+console.log(movies) // ['Interstellar', 'Inception', 'Memento', 'The Prestige', 'The Dark Knight']
+
+</script>
+</html>
